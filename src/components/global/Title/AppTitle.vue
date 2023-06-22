@@ -1,4 +1,5 @@
 <template>
+  <!--Title Container-->
   <div 
     :class="[
       'w-full space-x-5 font-bold',
@@ -9,9 +10,11 @@
       {'text-[3.2rem]': props.size === 'md'},
       {'text-[4.2rem]': props.size === 'lg'},
     ]">
+    <!--Classic title part-->
     <h1 class="inline-block">
       <slot />
     </h1>
+    <!--Pretty title part-->
     <h1 class="inline-block text-primary">
       <slot name="pretty" />
     </h1>
@@ -19,12 +22,13 @@
 </template>
 
 <script setup lang="ts">
-
+//Title Props Interface
 export interface AppTitleProps {
   placement?: 'left' | 'center' | 'right';
   size?: 'sm' | 'md' | 'lg';
 }
 
+//Props
 const props = withDefaults(defineProps<AppTitleProps>(), {
   placement: 'left',
   size: 'md',
