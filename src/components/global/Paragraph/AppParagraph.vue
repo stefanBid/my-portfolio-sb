@@ -1,5 +1,7 @@
 <template>
+  <!--Paragraph container-->
   <div class="w-full">
+    <!--Paragraph-->
     <p 
     :class="[
       'text-justify',
@@ -16,12 +18,13 @@
 </template>
 
 <script setup lang="ts">
-
+//Paragraph Props Interface
 export interface AppParagraphProps {
   placement?: 'left' | 'center' | 'right';
   size?: 'sm' | 'md' | 'lg';
 }
 
+//Props
 const props = withDefaults(defineProps<AppParagraphProps>(), {
   placement: 'left',
   size: 'md',

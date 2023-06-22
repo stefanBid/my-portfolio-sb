@@ -16,11 +16,13 @@
         'px-11 py-4 rounded-[4rem]': !props.rounded,
       },
     ]">
-
+      <!--Button Content organization-->
+      <!--Case 1 Tex-Button-->
       <span v-if="!props.rounded" class="flex items-center justify-center gap-x-3">
         <slot />
         <slot name="icon" />
       </span>
+      <!--Case 2 Icon-Button-->
       <span v-else >
         <slot name="icon" />
       </span>
@@ -29,9 +31,10 @@
 </template>
 
 <script setup lang="ts">
-
+//Imports
 import { computed } from 'vue';
 
+//Button Props Interface
 export interface AppButtonProps {
   custom: 'classic' | 'minimal';
   disabled?: boolean;
@@ -39,6 +42,7 @@ export interface AppButtonProps {
   outline?: boolean;
 }
 
+//Props
 const props = withDefaults(defineProps<AppButtonProps>(), {
   custom: 'classic',
   disabled: false,
@@ -46,6 +50,7 @@ const props = withDefaults(defineProps<AppButtonProps>(), {
   outline: false,
 });
 
+//Define coputed for each button type
 const classic = computed(() => {
   return props.custom === 'classic' && !props.disabled && !props.outline;
 });

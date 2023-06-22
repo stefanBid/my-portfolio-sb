@@ -16,11 +16,15 @@ declare module 'vue' {
     IconMdiCloseCircle: typeof import('~icons/mdi/close-circle')['default']
     IconMdiCloseCircleOutline: typeof import('~icons/mdi/close-circle-outline')['default']
     IconMdiCode: typeof import('~icons/mdi/code')['default']
+    IconMdiDecagram: typeof import('~icons/mdi/decagram')['default']
+    IconMdiDecagramOutline: typeof import('~icons/mdi/decagram-outline')['default']
     IconMdiDownloadCircleOutline: typeof import('~icons/mdi/download-circle-outline')['default']
     IconMdiFileDownloadOutline: typeof import('~icons/mdi/file-download-outline')['default']
     IconMdiInfo: typeof import('~icons/mdi/info')['default']
     IconMdiInfoOutline: typeof import('~icons/mdi/info-outline')['default']
     IconMdiLinkedin: typeof import('~icons/mdi/linkedin')['default']
     IconMdiSearch: typeof import('~icons/mdi/search')['default']
+    InfoToolTip: typeof import('./src/components/global/SearchBar/InfoToolTip.vue')['default']
+    LevelTooltip: typeof import('./src/components/NextUpdate/LevelTooltip.vue')['default']
   }
 }
