@@ -1,1 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  @apply box-border p-0 m-0 no-underline border-none outline-none font-poppins scroll-smooth;
+}
+
+body {
+  @apply text-white bg-tertiary;
+}
+
+html {
+  @apply text-[62.5%] lg:text-[50%] overflow-x-hidden;
+}

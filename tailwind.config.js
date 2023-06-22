@@ -21,6 +21,10 @@ export default {
         'secondary': '#323946',
         'tertiary': '#1f242d',
       },
+      boxShadow: {
+        'button': '0 0 1rem',
+        'search': '0 0 2rem'
+      }
     }
   },
   plugins: [],
