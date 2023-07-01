@@ -29,7 +29,7 @@
     <!--Menu NavBar-->
     <nav 
       :class="[
-        'duration-300 ease-in-out',
+        'duration-300 ease-in-out bg-inherit',
         {'space-x-[4rem]': !smBreakPoint},
         {'absolute top-full w-full py-[1rem] px-[3%] border-t-2 border-solid border-secondary': smBreakPoint},
         {'left-0 shadow-xl shadow-secondary': isOpenMenu && smBreakPoint },
@@ -43,7 +43,7 @@
         target="_blank"
         :class="[
           'text-[1.7rem] duration-300 ease-in-out hover:text-primary  hover:animate-pulse',
-          {'block text-[2rem] my-[3rem] mx-0': smBreakPoint}
+          {'block text-[2rem] my-[3rem] mx-0 w-fit': smBreakPoint}
         ]"
         @click="togglePage()">
         {{ item.displayName }}
