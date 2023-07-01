@@ -13,9 +13,11 @@ declare module 'vue' {
     AppSearchBar: typeof import('./src/components/global/SearchBar/AppSearchBar.vue')['default']
     AppTitle: typeof import('./src/components/global/Title/AppTitle.vue')['default']
     AppToolTip: typeof import('./src/components/global/ToolTip/AppToolTip.vue')['default']
+    IconMdiClose: typeof import('~icons/mdi/close')['default']
     IconMdiCloseCircle: typeof import('~icons/mdi/close-circle')['default']
     IconMdiCloseCircleOutline: typeof import('~icons/mdi/close-circle-outline')['default']
     IconMdiCode: typeof import('~icons/mdi/code')['default']
+    IconMdiConsole: typeof import('~icons/mdi/console')['default']
     IconMdiDecagram: typeof import('~icons/mdi/decagram')['default']
     IconMdiDecagramOutline: typeof import('~icons/mdi/decagram-outline')['default']
     IconMdiDownloadCircleOutline: typeof import('~icons/mdi/download-circle-outline')['default']
@@ -23,8 +25,11 @@ declare module 'vue' {
     IconMdiInfo: typeof import('~icons/mdi/info')['default']
     IconMdiInfoOutline: typeof import('~icons/mdi/info-outline')['default']
     IconMdiLinkedin: typeof import('~icons/mdi/linkedin')['default']
+    IconMdiMenu: typeof import('~icons/mdi/menu')['default']
     IconMdiSearch: typeof import('~icons/mdi/search')['default']
     InfoToolTip: typeof import('./src/components/global/SearchBar/InfoToolTip.vue')['default']
     LevelTooltip: typeof import('./src/components/NextUpdate/LevelTooltip.vue')['default']
+    TheNavBar: typeof import('./src/components/TheNavBar/TheNavBar.vue')['default']
+    TheSection: typeof import('./src/components/TheSection/TheSection.vue')['default']
   }
 }
