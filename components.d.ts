@@ -29,6 +29,8 @@ declare module 'vue' {
     IconMdiSearch: typeof import('~icons/mdi/search')['default']
     InfoToolTip: typeof import('./src/components/global/SearchBar/InfoToolTip.vue')['default']
     LevelTooltip: typeof import('./src/components/NextUpdate/LevelTooltip.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     TheNavBar: typeof import('./src/components/TheNavBar/TheNavBar.vue')['default']
     TheSection: typeof import('./src/components/TheSection/TheSection.vue')['default']
   }
