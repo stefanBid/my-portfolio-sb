@@ -53,6 +53,17 @@
 </template>
 
 <script setup lang="ts">
+//********************************************************************************************//
+// - Component: NAV-BAR                                                                       //
+// - Author: Stefano Biddau                                                                   //
+// - Version: 1.0.0                                                                           //
+// - Status: ✅                                                                               //
+// - Description: This component is used to create nav-bar to navigate contents of web-app.   //
+// - Implementation:                                                                          //   
+//    - TODO:                                                                                 //
+//    - FIXME:                                                                                //    
+//********************************************************************************************//
+
 //Import
 import { ref, computed } from 'vue';
 import type { NavItem} from '../../types'
@@ -132,5 +143,4 @@ nav a.router-link-exact-active{
     color:#f72585;
     text-shadow: 0 0 1rem #f72585;
 }
-
 </style>

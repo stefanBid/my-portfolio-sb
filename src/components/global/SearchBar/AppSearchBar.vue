@@ -49,6 +49,17 @@
 </template>
 
 <script setup lang="ts">
+//********************************************************************************************//
+// - Component: APP-SEARCH-BAR                                                                //
+// - Author: Stefano Biddau                                                                   //
+// - Version: 1.0.0                                                                           //
+// - Status: ✅                                                                               //
+// - Description: This component is used to create an input for search an item                //
+// - Implementation:                                                                          //   
+//    - TODO:                                                                                 //
+//    - FIXME:                                                                                //    
+//********************************************************************************************//
+
 //Imports
 import { ref } from 'vue';
 import InfoToolTip from './InfoToolTip.vue';

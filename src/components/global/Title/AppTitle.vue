@@ -22,6 +22,17 @@
 </template>
 
 <script setup lang="ts">
+//********************************************************************************************//
+// - Component: APP-TITLE                                                                     //
+// - Author: Stefano Biddau                                                                   //
+// - Version: 1.0.0                                                                           //
+// - Status: ✅                                                                               //
+// - Description: This component is used to create a template for titles of pages             //
+// - Implementation:                                                                          //   
+//    - TODO:                                                                                 //
+//    - FIXME:                                                                                //    
+//********************************************************************************************//
+
 //Title Props Interface
 export interface AppTitleProps {
   placement?: 'left' | 'center' | 'right';

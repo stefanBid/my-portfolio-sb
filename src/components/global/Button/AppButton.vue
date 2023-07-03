@@ -31,6 +31,17 @@
 </template>
 
 <script setup lang="ts">
+//********************************************************************************************//
+// - Component: APP-BUTTON                                                                    //
+// - Author: Stefano Biddau                                                                   //
+// - Version: 1.0.0                                                                           //
+// - Status: ✅                                                                               //
+// - Description: This component is used to create a button with different styles and shapes. //
+// - Implementation:                                                                          //   
+//    - TODO:                                                                                 //
+//    - FIXME:                                                                                //    
+//********************************************************************************************//
+
 //Imports
 import { computed } from 'vue';
 

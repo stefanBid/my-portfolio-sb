@@ -18,6 +18,18 @@
 </template>
 
 <script setup lang="ts">
+//********************************************************************************************//
+// - Component: APP-PARAGRAPH                                                                 //
+// - Author: Stefano Biddau                                                                   //
+// - Version: 1.0.0                                                                           //
+// - Status: ✅                                                                               //
+// - Description: This component is used to create a paragraph for text input                 //
+// - Implementation:                                                                          //   
+//    - TODO:                                                                                 //
+//    - FIXME:                                                                                //    
+//********************************************************************************************//
+
+
 //Paragraph Props Interface
 export interface AppParagraphProps {
   placement?: 'left' | 'center' | 'right';

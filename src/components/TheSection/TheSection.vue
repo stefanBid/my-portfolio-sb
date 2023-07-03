@@ -21,6 +21,17 @@
 </template>
 
 <script setup lang="ts">
+//********************************************************************************************//
+// - Component: SECTION                                                                       //
+// - Author: Stefano Biddau                                                                   //
+// - Version: 1.0.0                                                                           //
+// - Status: ✅                                                                               //
+// - Description: This component is used to create a section for display content.             //
+// - Implementation:                                                                          //   
+//    - TODO:                                                                                 //
+//    - FIXME:                                                                                //    
+//********************************************************************************************//
+
 //Import
 import { useBreakpoints } from '@vueuse/core';
 
