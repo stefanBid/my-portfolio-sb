@@ -5,14 +5,13 @@
       mdBreakPoint ? 'px-[3%]' : 'px-[9%]'
     ]">
     <!--Wbsite Logo-->
-    <a 
+    <RouterLink
       class="flex items-center gap-3 group " 
-      href="https://vueuse.org/core/useBreakpoints/"
-      target="_blank"
+      :to="{ name: navLogo.routerName }"
     >
       <IconMdiConsole class="w-20 h-20 duration-300 ease-in-out group-hover:text-primary"/> 
       <p class="group-hover:text-primary text-[2.5rem] font-semibold duration-300 ease-in-out leading-[1.1rem]">{{ navLogo.displayName }}</p>
-    </a>
+    </RouterLink>
 
     <!--Hamburger menu icon-->
     <div v-show="smBreakPoint">
@@ -29,7 +28,7 @@
     <!--Menu NavBar-->
     <nav 
       :class="[
-        'duration-300 ease-in-out bg-inherit',
+        'duration-300 ease-in-out bg-inherit ',
         {'space-x-[4rem]': !smBreakPoint},
         {'absolute top-full w-full py-[1rem] px-[3%] border-t-2 border-solid border-secondary': smBreakPoint},
         {'left-0 shadow-xl shadow-secondary': isOpenMenu && smBreakPoint },
@@ -37,17 +36,17 @@
         
       ]"
     >
-      <a
+
+      <RouterLink
         v-for="item in navItems" :key="item.routerName"
-        href="https://vueuse.org/core/useBreakpoints/"
-        target="_blank"
+        :to="{ name: item.routerName }"
         :class="[
           'text-[1.7rem] duration-300 ease-in-out hover:text-primary  hover:animate-pulse',
           {'block text-[2rem] my-[3rem] mx-0 w-fit': smBreakPoint}
         ]"
         @click="togglePage()">
         {{ item.displayName }}
-      </a>
+      </RouterLink>
     </nav>
 
   </header>
@@ -58,6 +57,7 @@
 import { ref, computed } from 'vue';
 import type { NavItem} from '../../types'
 import { useBreakpoints } from '@vueuse/core'
+import { RouterLink } from 'vue-router';
 
 //1) Configure the nav items
 const navLogo = ref<NavItem>({
@@ -75,12 +75,12 @@ const navItems = ref<NavItem[]>([
     routerName: 'about',
   },
   {
-    displayName: 'Projects',
-    routerName: 'projects',
+    displayName: 'Skills',
+    routerName: 'skills',
   },
   {
-    displayName: 'Contact',
-    routerName: 'contact',
+    displayName: 'Works',
+    routerName: 'works',
   },
 ]);
 
@@ -115,7 +115,6 @@ const togglePage = () => {
 //This computed is use to show reactivity value of isOpen
 const isOpenMenu = computed(() => {
   if (smBreakPoint.value) {
-    console.log(isOpen.value)
     return isOpen.value;
   } else {
     isOpen.value = false;
@@ -126,6 +125,12 @@ const isOpenMenu = computed(() => {
 
 <style scoped>
 nav a:hover{
-  text-shadow: 0 0 1rem;
+  text-shadow: 0 0 1rem #f72585;
 }
+
+nav a.router-link-exact-active{
+    color:#f72585;
+    text-shadow: 0 0 1rem #f72585;
+}
+
 </style>
